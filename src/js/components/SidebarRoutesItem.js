@@ -17,7 +17,7 @@ let SidebarRoutesItem = (props) => {
                     ref={provided.innerRef}
                 >
                     <span>{content}</span>
-                    <span className='close-item'>[x]</span>
+                    <span className='close-item'></span>
                 </li>
             )}
         </Draggable>

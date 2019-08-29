@@ -5,7 +5,7 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     devtool: 'source-map',
     entry: [
         './src/js/index.js',
@@ -20,7 +20,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'eslint-loader']
+                use: ['babel-loader']
             },            
             {
                 test: /\.css$/,
@@ -70,10 +70,10 @@ module.exports = {
             template: './src/pug/index.pug'
         })
     ],
-/*     optimization: {
+    optimization: {
         minimizer: [
             new TerserPlugin(),
             new OptimizeCssAssetsPlugin({})
         ]
-    } */
+    }
 };
