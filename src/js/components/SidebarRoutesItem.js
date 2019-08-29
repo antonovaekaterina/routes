@@ -27,3 +27,4 @@ let SidebarRoutesItem = (props) => {
 SidebarRoutesItem = React.memo(SidebarRoutesItem);
 
 export default SidebarRoutesItem;
+

@@ -1,8 +1,8 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback } from 'react';
 import SidebarRoutes from './SidebarRoutes.js';
 import MapRoutes from './MapRoutes.js';
 
-let counter = 0;
+export let counter = {value: 0};
 
 let Routes = () => {
     const initialRoutes = {
@@ -28,7 +28,7 @@ let Routes = () => {
             const inputValue = e.target.value;
             if (inputValue === '') return;
 
-            const id = counter;
+            const id = counter.value;
 
             const column = routes.columns['column-1'];
             const newPointsIds = Array.from(column.pointsIds);
@@ -57,7 +57,7 @@ let Routes = () => {
             setRoutes(newRoutes);
 
             e.target.value = '';
-            counter++;
+            counter.value++;
         },
         [routes, mapCenter]
     )

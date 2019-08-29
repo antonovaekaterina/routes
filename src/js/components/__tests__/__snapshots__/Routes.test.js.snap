@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes Routes component renders correctly 1`] = `
+<Fragment>
+  <Memo(SidebarRoutes)
+    handleInput={[Function]}
+    handleSidebarItemDelete={[Function]}
+    handleSidebarItemDrag={[Function]}
+    routes={
+      Object {
+        "columnOrder": Array [
+          "column-1",
+        ],
+        "columns": Object {
+          "column-1": Object {
+            "id": "column-1",
+            "pointsIds": Array [],
+          },
+        },
+        "points": Object {},
+      }
+    }
+  />
+  <MapRoutes
+    handleMapBoundsChange={[Function]}
+    handlePlacemarkDrag={[Function]}
+    mapCenter={
+      Array [
+        56.0227983,
+        92.897429,
+      ]
+    }
+    routes={
+      Object {
+        "columnOrder": Array [
+          "column-1",
+        ],
+        "columns": Object {
+          "column-1": Object {
+            "id": "column-1",
+            "pointsIds": Array [],
+          },
+        },
+        "points": Object {},
+      }
+    }
+  />
+</Fragment>
+`;

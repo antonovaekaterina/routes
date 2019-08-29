@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarRoutes SidebarRoutes component renders correctly 1`] = `
+<Memo(SidebarRoutes)
+  handleInput={[MockFunction]}
+  handleSidebarItemDelete={[MockFunction]}
+  handleSidebarItemDrag={[Function]}
+  routes={
+    Object {
+      "columnOrder": Array [
+        "column-1",
+      ],
+      "columns": Object {
+        "column-1": Object {
+          "id": "column-1",
+          "pointsIds": Array [
+            "point-0",
+            "point-1",
+            "point-2",
+            "point-3",
+          ],
+        },
+      },
+      "points": Object {
+        "point-0": Object {
+          "content": "точка 1",
+          "coords": Array [
+            56.0227983,
+            92.897429,
+          ],
+          "id": "point-0",
+        },
+        "point-1": Object {
+          "content": "точка 2",
+          "coords": Array [
+            56.0227983,
+            92.897429,
+          ],
+          "id": "point-1",
+        },
+        "point-2": Object {
+          "content": "точка 3",
+          "coords": Array [
+            56.0227983,
+            92.897429,
+          ],
+          "id": "point-2",
+        },
+        "point-3": Object {
+          "content": "точка 4",
+          "coords": Array [
+            56.0227983,
+            92.897429,
+          ],
+          "id": "point-3",
+        },
+      },
+    }
+  }
+>
+  <aside
+    className="map-sidebar"
+  >
+    <input
+      className="map-sidebar__input"
+      onKeyDown={[MockFunction]}
+      placeholder="Введите название точки"
+      type="text"
+    />
+    <DragDropContext
+      onDragEnd={[Function]}
+    >
+      <ErrorBoundary>
+        <App
+          onDragEnd={[Function]}
+          setOnError={[Function]}
+          uniqueId={1}
+        >
+          <Provider
+            context={
+              Object {
+                "$$typeof": Symbol(react.context),
+                "Consumer": Object {
+                  "$$typeof": Symbol(react.context),
+                  "_calculateChangedBits": null,
+                  "_context": [Circular],
+                },
+                "Provider": Object {
+                  "$$typeof": Symbol(react.provider),
+                  "_context": [Circular],
+                },
+                "_calculateChangedBits": null,
+                "_currentRenderer": Object {},
+                "_currentRenderer2": null,
+                "_currentValue": null,
+                "_currentValue2": null,
+                "_threadCount": 0,
+              }
+            }
+            store={
+              Object {
+                "dispatch": [Function],
+                "getState": [Function],
+                "replaceReducer": [Function],
+                "subscribe": [Function],
+                Symbol(observable): [Function],
+              }
+            }
+          >
+            <ConnectFunction
+              direction="vertical"
+              droppableId="column-1"
+              ignoreContainerClipping={false}
+              isCombineEnabled={false}
+              isDropDisabled={false}
+              type="DEFAULT"
+            >
+              <Droppable
+                direction="vertical"
+                droppableId="column-1"
+                ignoreContainerClipping={false}
+                isCombineEnabled={false}
+                isDropDisabled={false}
+                placeholder={null}
+                shouldAnimatePlaceholder={true}
+                snapshot={
+                  Object {
+                    "draggingFromThisWith": null,
+                    "draggingOverWith": null,
+                    "isDraggingOver": false,
+                  }
+                }
+                type="DEFAULT"
+                updateViewportMaxScroll={[Function]}
+              >
+                <ul
+                  className="map-sidebar__list"
+                  data-react-beautiful-dnd-droppable="1"
+                  onClick={[MockFunction]}
+                >
+                  <Memo(SidebarRoutesItem)
+                    content="точка 1"
+                    id="point-0"
+                    index={0}
+                    key="point-0"
+                  >
+                    <ConnectFunction
+                      disableInteractiveElementBlocking={false}
+                      draggableId="point-0"
+                      index={0}
+                      isDragDisabled={false}
+                      shouldRespectForcePress={false}
+                    >
+                      <Draggable
+                        disableInteractiveElementBlocking={false}
+                        draggableId="point-0"
+                        drop={[Function]}
+                        dropAnimationFinished={[Function]}
+                        index={0}
+                        isDragDisabled={false}
+                        lift={[Function]}
+                        mapped={
+                          Object {
+                            "combineTargetFor": null,
+                            "offset": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "shouldAnimateDisplacement": true,
+                            "snapshot": Object {
+                              "combineTargetFor": null,
+                              "combineWith": null,
+                              "draggingOver": null,
+                              "dropAnimation": null,
+                              "isDragging": false,
+                              "isDropAnimating": false,
+                              "mode": null,
+                            },
+                            "type": "SECONDARY",
+                          }
+                        }
+                        move={[Function]}
+                        moveByWindowScroll={[Function]}
+                        moveDown={[Function]}
+                        moveLeft={[Function]}
+                        moveRight={[Function]}
+                        moveUp={[Function]}
+                        shouldRespectForcePress={false}
+                      >
+                        <li
+                          aria-roledescription="Draggable item. Press space bar to lift"
+                          className="map-sidebar__list__item"
+                          data-id="point-0"
+                          data-index={0}
+                          data-react-beautiful-dnd-drag-handle="1"
+                          data-react-beautiful-dnd-draggable="1"
+                          draggable={false}
+                          onBlur={[Function]}
+                          onDragStart={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          onTouchStart={[Function]}
+                          onTransitionEnd={null}
+                          style={
+                            Object {
+                              "transform": null,
+                              "transition": null,
+                            }
+                          }
+                          tabIndex={0}
+                        >
+                          <span>
+                            точка 1
+                          </span>
+                          <span
+                            className="close-item"
+                          >
+                            [x]
+                          </span>
+                        </li>
+                      </Draggable>
+                    </ConnectFunction>
+                  </Memo(SidebarRoutesItem)>
+                  <Memo(SidebarRoutesItem)
+                    content="точка 2"
+                    id="point-1"
+                    index={1}
+                    key="point-1"
+                  >
+                    <ConnectFunction
+                      disableInteractiveElementBlocking={false}
+                      draggableId="point-1"
+                      index={1}
+                      isDragDisabled={false}
+                      shouldRespectForcePress={false}
+                    >
+                      <Draggable
+                        disableInteractiveElementBlocking={false}
+                        draggableId="point-1"
+                        drop={[Function]}
+                        dropAnimationFinished={[Function]}
+                        index={1}
+                        isDragDisabled={false}
+                        lift={[Function]}
+                        mapped={
+                          Object {
+                            "combineTargetFor": null,
+                            "offset": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "shouldAnimateDisplacement": true,
+                            "snapshot": Object {
+                              "combineTargetFor": null,
+                              "combineWith": null,
+                              "draggingOver": null,
+                              "dropAnimation": null,
+                              "isDragging": false,
+                              "isDropAnimating": false,
+                              "mode": null,
+                            },
+                            "type": "SECONDARY",
+                          }
+                        }
+                        move={[Function]}
+                        moveByWindowScroll={[Function]}
+                        moveDown={[Function]}
+                        moveLeft={[Function]}
+                        moveRight={[Function]}
+                        moveUp={[Function]}
+                        shouldRespectForcePress={false}
+                      >
+                        <li
+                          aria-roledescription="Draggable item. Press space bar to lift"
+                          className="map-sidebar__list__item"
+                          data-id="point-1"
+                          data-index={1}
+                          data-react-beautiful-dnd-drag-handle="1"
+                          data-react-beautiful-dnd-draggable="1"
+                          draggable={false}
+                          onBlur={[Function]}
+                          onDragStart={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          onTouchStart={[Function]}
+                          onTransitionEnd={null}
+                          style={
+                            Object {
+                              "transform": null,
+                              "transition": null,
+                            }
+                          }
+                          tabIndex={0}
+                        >
+                          <span>
+                            точка 2
+                          </span>
+                          <span
+                            className="close-item"
+                          >
+                            [x]
+                          </span>
+                        </li>
+                      </Draggable>
+                    </ConnectFunction>
+                  </Memo(SidebarRoutesItem)>
+                  <Memo(SidebarRoutesItem)
+                    content="точка 3"
+                    id="point-2"
+                    index={2}
+                    key="point-2"
+                  >
+                    <ConnectFunction
+                      disableInteractiveElementBlocking={false}
+                      draggableId="point-2"
+                      index={2}
+                      isDragDisabled={false}
+                      shouldRespectForcePress={false}
+                    >
+                      <Draggable
+                        disableInteractiveElementBlocking={false}
+                        draggableId="point-2"
+                        drop={[Function]}
+                        dropAnimationFinished={[Function]}
+                        index={2}
+                        isDragDisabled={false}
+                        lift={[Function]}
+                        mapped={
+                          Object {
+                            "combineTargetFor": null,
+                            "offset": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "shouldAnimateDisplacement": true,
+                            "snapshot": Object {
+                              "combineTargetFor": null,
+                              "combineWith": null,
+                              "draggingOver": null,
+                              "dropAnimation": null,
+                              "isDragging": false,
+                              "isDropAnimating": false,
+                              "mode": null,
+                            },
+                            "type": "SECONDARY",
+                          }
+                        }
+                        move={[Function]}
+                        moveByWindowScroll={[Function]}
+                        moveDown={[Function]}
+                        moveLeft={[Function]}
+                        moveRight={[Function]}
+                        moveUp={[Function]}
+                        shouldRespectForcePress={false}
+                      >
+                        <li
+                          aria-roledescription="Draggable item. Press space bar to lift"
+                          className="map-sidebar__list__item"
+                          data-id="point-2"
+                          data-index={2}
+                          data-react-beautiful-dnd-drag-handle="1"
+                          data-react-beautiful-dnd-draggable="1"
+                          draggable={false}
+                          onBlur={[Function]}
+                          onDragStart={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          onTouchStart={[Function]}
+                          onTransitionEnd={null}
+                          style={
+                            Object {
+                              "transform": null,
+                              "transition": null,
+                            }
+                          }
+                          tabIndex={0}
+                        >
+                          <span>
+                            точка 3
+                          </span>
+                          <span
+                            className="close-item"
+                          >
+                            [x]
+                          </span>
+                        </li>
+                      </Draggable>
+                    </ConnectFunction>
+                  </Memo(SidebarRoutesItem)>
+                  <Memo(SidebarRoutesItem)
+                    content="точка 4"
+                    id="point-3"
+                    index={3}
+                    key="point-3"
+                  >
+                    <ConnectFunction
+                      disableInteractiveElementBlocking={false}
+                      draggableId="point-3"
+                      index={3}
+                      isDragDisabled={false}
+                      shouldRespectForcePress={false}
+                    >
+                      <Draggable
+                        disableInteractiveElementBlocking={false}
+                        draggableId="point-3"
+                        drop={[Function]}
+                        dropAnimationFinished={[Function]}
+                        index={3}
+                        isDragDisabled={false}
+                        lift={[Function]}
+                        mapped={
+                          Object {
+                            "combineTargetFor": null,
+                            "offset": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "shouldAnimateDisplacement": true,
+                            "snapshot": Object {
+                              "combineTargetFor": null,
+                              "combineWith": null,
+                              "draggingOver": null,
+                              "dropAnimation": null,
+                              "isDragging": false,
+                              "isDropAnimating": false,
+                              "mode": null,
+                            },
+                            "type": "SECONDARY",
+                          }
+                        }
+                        move={[Function]}
+                        moveByWindowScroll={[Function]}
+                        moveDown={[Function]}
+                        moveLeft={[Function]}
+                        moveRight={[Function]}
+                        moveUp={[Function]}
+                        shouldRespectForcePress={false}
+                      >
+                        <li
+                          aria-roledescription="Draggable item. Press space bar to lift"
+                          className="map-sidebar__list__item"
+                          data-id="point-3"
+                          data-index={3}
+                          data-react-beautiful-dnd-drag-handle="1"
+                          data-react-beautiful-dnd-draggable="1"
+                          draggable={false}
+                          onBlur={[Function]}
+                          onDragStart={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          onTouchStart={[Function]}
+                          onTransitionEnd={null}
+                          style={
+                            Object {
+                              "transform": null,
+                              "transition": null,
+                            }
+                          }
+                          tabIndex={0}
+                        >
+                          <span>
+                            точка 4
+                          </span>
+                          <span
+                            className="close-item"
+                          >
+                            [x]
+                          </span>
+                        </li>
+                      </Draggable>
+                    </ConnectFunction>
+                  </Memo(SidebarRoutesItem)>
+                  <AnimateInOut
+                    on={null}
+                    shouldAnimate={true}
+                  />
+                </ul>
+              </Droppable>
+            </ConnectFunction>
+          </Provider>
+        </App>
+      </ErrorBoundary>
+    </DragDropContext>
+  </aside>
+</Memo(SidebarRoutes)>
+`;

@@ -42670,6 +42670,7 @@ var Routes = function Routes() {
 
   var handleSidebarItemDelete = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (e) {
     var target = e.target;
+    console.dir(e.target);
     if (!target.classList.contains('close-item')) return;
 
     while (target) {
